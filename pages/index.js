@@ -1,65 +1,70 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
 
-export default function Home() {
+import {
+  Box,
+  Image,
+  Container,
+  Flex,
+  AspectRatio,
+  Heading,
+  Stack,
+  Center,
+  Wrap,
+  Grid,
+} from "@chakra-ui/core";
+
+import TourCard from "../components/TourCard";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+//[{"name":"Вокруг Иссык-Куля","short_description":"Exploring the jaw-dropping US east coast by foot and by boat","destination":"Иссык-Куль","price":"1500","difficulty":"Легкая","group_size":"20","date":"21 - Июнь"},{"name":"ddvmkdvmk","short_description":"Описание","destination":"Дестинация","price":"Цена","difficulty":"Сложность","group_size":"Группа","date":"Дата"}]
+
+export default function Home({ tours }) {
+  console.log({ tours });
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+    <>
+      <Header />
+      <Box as="main" sx={{ bg: "gray.50", py: 8 }}>
+        <Container as="section" maxW="xl">
+          <Heading
+            as="h2"
+            sx={{ fontSize: ["2xl", "3xl"], textAlign: "center", mb: 8 }}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            Ближайшие туры
+          </Heading>
+          <Grid
+            width="100%"
+            sx={{
+              gridTemplateColumns: [
+                "1fr",
+                null,
+                "repeat(2, 1fr)",
+                null,
+                "repeat(3, 1fr)",
+              ],
+              justifyItems: "center",
+            }}
+            gap={8}
           >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+            {tours.map((tour, index) => (
+              <TourCard {...tour} key={index} />
+            ))}
+          </Grid>
+        </Container>
+      </Box>
+      <Footer />
+    </>
+  );
 }
+
+export const getStaticProps = async () => {
+  const { getTours } = require("../lib/data");
+  let tours = await getTours();
+  return {
+    props: {
+      tours,
+    },
+    revalidate: 1,
+  };
+};

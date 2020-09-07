@@ -1,0 +1,156 @@
+[
+  {
+    "id": "5f56258edc9f7520ef6036b5",
+    "name": "Вокруг Иссык-Куля",
+    "desc": "Exploring the jaw-dropping US east coast by foot and by boat",
+    "cover": {
+      "idAttachment": "5f563e3295ad2a2508a9e058",
+      "color": null,
+      "idUploadedBackground": null,
+      "size": "normal",
+      "brightness": "light",
+      "scaled": [
+        {
+          "_id": "5f563e3395ad2a2508a9e05f",
+          "id": "5f563e3395ad2a2508a9e05f",
+          "scaled": false,
+          "url": "https://trello-attachments.s3.amazonaws.com/5f56258edc9f7520ef6036b5/70x50/b12113b4afa7815cea45ff9c1f9f2ef7/IMG_20200704_212456_387.jpg",
+          "bytes": 2235,
+          "height": 50,
+          "width": 70
+        },
+        {
+          "_id": "5f563e3395ad2a2508a9e060",
+          "id": "5f563e3395ad2a2508a9e060",
+          "scaled": false,
+          "url": "https://trello-attachments.s3.amazonaws.com/5f56258edc9f7520ef6036b5/250x150/b12113b4afa7815cea45ff9c1f9f2ef7/IMG_20200704_212456_387.jpg",
+          "bytes": 14126,
+          "height": 150,
+          "width": 250
+        },
+        {
+          "_id": "5f563e3395ad2a2508a9e061",
+          "id": "5f563e3395ad2a2508a9e061",
+          "scaled": true,
+          "url": "https://trello-attachments.s3.amazonaws.com/5f56258edc9f7520ef6036b5/150x113/b12113b4afa7815cea45ff9c1f9f2ef7/IMG_20200704_212456_387.jpg",
+          "bytes": 8215,
+          "height": 113,
+          "width": 150
+        },
+        {
+          "_id": "5f563e3395ad2a2508a9e062",
+          "id": "5f563e3395ad2a2508a9e062",
+          "scaled": true,
+          "url": "https://trello-attachments.s3.amazonaws.com/5f56258edc9f7520ef6036b5/300x225/b12113b4afa7815cea45ff9c1f9f2ef7/IMG_20200704_212456_387.jpg",
+          "bytes": 28931,
+          "height": 225,
+          "width": 300
+        },
+        {
+          "_id": "5f563e3395ad2a2508a9e063",
+          "id": "5f563e3395ad2a2508a9e063",
+          "scaled": true,
+          "url": "https://trello-attachments.s3.amazonaws.com/5f56258edc9f7520ef6036b5/600x450/b12113b4afa7815cea45ff9c1f9f2ef7/IMG_20200704_212456_387.jpg",
+          "bytes": 103840,
+          "height": 450,
+          "width": 600
+        },
+        {
+          "_id": "5f563e3395ad2a2508a9e064",
+          "id": "5f563e3395ad2a2508a9e064",
+          "scaled": true,
+          "url": "https://trello-attachments.s3.amazonaws.com/5f56258edc9f7520ef6036b5/1200x900/b12113b4afa7815cea45ff9c1f9f2ef7/IMG_20200704_212456_387.jpg",
+          "bytes": 362701,
+          "height": 900,
+          "width": 1200
+        },
+        {
+          "_id": "5f563e3395ad2a2508a9e065",
+          "id": "5f563e3395ad2a2508a9e065",
+          "scaled": true,
+          "url": "https://trello-attachments.s3.amazonaws.com/5f5623dda5f75f7368d0df19/5f56258edc9f7520ef6036b5/1ef76eefcfba1d31a08208b4bec3a536/IMG_20200704_212456_387.jpg",
+          "bytes": 412605,
+          "height": 960,
+          "width": 1280
+        }
+      ],
+      "edgeColor": "#958e77"
+    },
+    "attachments": [
+      {
+        "url": "https://trello-attachments.s3.amazonaws.com/5f5623dda5f75f7368d0df19/5f56258edc9f7520ef6036b5/1ef76eefcfba1d31a08208b4bec3a536/IMG_20200704_212456_387.jpg",
+        "id": "5f563e3295ad2a2508a9e058"
+      }
+    ],
+    "customFieldItems": [
+      {
+        "id": "5f563e2633617585b67b2fdd",
+        "value": { "number": "1500" },
+        "idCustomField": "5f563e2341e9a68e6f42c1d7",
+        "idModel": "5f56258edc9f7520ef6036b5",
+        "modelType": "card"
+      },
+      {
+        "id": "5f563e0f5a8e1b730a12a01f",
+        "value": { "text": "Легкая" },
+        "idCustomField": "5f563dd0cdc2c73f58a39479",
+        "idModel": "5f56258edc9f7520ef6036b5",
+        "modelType": "card"
+      },
+      {
+        "id": "5f563df5b3aa735cef4cc98e",
+        "value": { "number": "20" },
+        "idCustomField": "5f563dc3201dde440f3b15d3",
+        "idModel": "5f56258edc9f7520ef6036b5",
+        "modelType": "card"
+      },
+      {
+        "id": "5f563debeb77a9359cbb2a7b",
+        "value": { "text": "34 - Июнь" },
+        "idCustomField": "5f563d8921f89381f4feef1d",
+        "idModel": "5f56258edc9f7520ef6036b5",
+        "modelType": "card"
+      },
+      {
+        "id": "5f563de6ec115475fb5da3ae",
+        "value": { "text": "Иссык-Куль" },
+        "idCustomField": "5f563d7a8431e236a977d708",
+        "idModel": "5f56258edc9f7520ef6036b5",
+        "modelType": "card"
+      }
+    ]
+  },
+  {
+    "id": "5f56259008b4584a42f7fb24",
+    "name": "ddvmkdvmk",
+    "desc": "",
+    "cover": {
+      "idAttachment": null,
+      "color": null,
+      "idUploadedBackground": null,
+      "size": "normal",
+      "brightness": "light"
+    },
+    "attachments": [],
+    "customFieldItems": []
+  }
+][
+  ({
+    "name": "Вокруг Иссык-Куля",
+    "short_description": "Exploring the jaw-dropping US east coast by foot and by boat",
+    "destination": "Иссык-Куль",
+    "price": "1500",
+    "difficulty": "Легкая",
+    "group_size": "20",
+    "date": "34 - Июнь"
+  },
+  {
+    "name": "ddvmkdvmk",
+    "short_description": "Описание",
+    "destination": "Дестинация",
+    "price": "Цена",
+    "difficulty": "Сложность",
+    "group_size": "Группа",
+    "date": "Дата"
+  })
+]
