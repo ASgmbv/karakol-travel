@@ -20,8 +20,6 @@ import Footer from "../components/Footer";
 //[{"name":"Вокруг Иссык-Куля","short_description":"Exploring the jaw-dropping US east coast by foot and by boat","destination":"Иссык-Куль","price":"1500","difficulty":"Легкая","group_size":"20","date":"21 - Июнь"},{"name":"ddvmkdvmk","short_description":"Описание","destination":"Дестинация","price":"Цена","difficulty":"Сложность","group_size":"Группа","date":"Дата"}]
 
 export default function Home({ tours }) {
-  console.log({ tours });
-
   return (
     <>
       <Header />

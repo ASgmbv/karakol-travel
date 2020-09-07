@@ -7,6 +7,19 @@ import {
   FaRegUser,
 } from "react-icons/fa";
 
+function groupSizeToRussian(size) {
+  if (size === 11 || size === 12 || size === 13 || size === 14) {
+    return "человек";
+  } else {
+    let a = size % 10;
+    if (a === 2 || a === 3 || a === 4) {
+      return "человека";
+    } else {
+      return "человек";
+    }
+  }
+}
+
 const TourCard = ({
   name,
   short_description,
@@ -17,8 +30,6 @@ const TourCard = ({
   price,
   image,
 }) => {
-  console.log("image:", image);
-
   return (
     <Flex
       sx={{
@@ -53,7 +64,7 @@ const TourCard = ({
               height: "100%",
               backgroundImage:
                 "linear-gradient(to right bottom, #5987bd, #342fc4)",
-              opacity: 0.5,
+              opacity: 0.3,
             }}
           />
           <Image
@@ -97,7 +108,9 @@ const TourCard = ({
           </Stack>
           <Stack direction="row" align="center">
             <FaRegUser style={{ color: "#6680D9", fontSize: "20px" }} />
-            <Text sx={{}}>{group_size}</Text>
+            <Text sx={{}}>
+              {group_size + " " + groupSizeToRussian(group_size)}
+            </Text>
           </Stack>
           <Stack direction="row" align="center">
             <FaSortAmountUpAlt style={{ color: "#6680D9", fontSize: "20px" }} />
@@ -114,7 +127,7 @@ const TourCard = ({
         }}
       >
         <Text as="span" sx={{ fontSize: "xl", fontWeight: "bold" }}>
-          {price}
+          {`${price} сом`}
         </Text>
         <Button colorScheme="purple" borderRadius="full">
           Подробнее
