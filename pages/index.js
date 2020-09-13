@@ -22,6 +22,9 @@ import Footer from "../components/Footer";
 export default function Home({ tours }) {
   return (
     <>
+      <Head>
+        <title>Karakol Travel</title>
+      </Head>
       <Header />
       <Box as="main" sx={{ bg: "gray.50", py: 8 }}>
         <Container as="section" maxW="xl">
