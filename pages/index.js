@@ -23,7 +23,7 @@ export default function Home({ tours }) {
   return (
     <>
       <Head>
-        <title>Akyl</title>
+        <title>Akyl Alamanov</title>
       </Head>
       <Header />
       <Box as="main" sx={{ bg: "gray.50", py: 8 }}>
