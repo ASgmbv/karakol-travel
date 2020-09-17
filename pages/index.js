@@ -23,7 +23,7 @@ export default function Home({ tours }) {
   return (
     <>
       <Head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164799257-2"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
