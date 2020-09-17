@@ -23,16 +23,21 @@ export default function Home({ tours }) {
   return (
     <>
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=[Tracking ID]"
+        />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164799257-2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-164799257-2');
-        </script>
-        <title>Karakol Travel</title>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'UA-164799257-2');
+              `,
+          }}
+        />
       </Head>
       <Header />
       <Box as="main" sx={{ bg: "gray.50", py: 8 }}>
