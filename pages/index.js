@@ -46,64 +46,64 @@ export default function Home({ tours }) {
             {
                   "@context": "http://schema.org",
                   "@type": "HowTo",
-                  name: "Как заброировать тур?",
-                  description:
+                  "name": "Как заброировать тур?",
+                  "description":
                     "Перейдите на сайт и выберите тур, который вам понравился.",
-                  image: {
+                  "image": {
                     "@type": "ImageObject",
-                    url:
+                    "url":
                       "https://trello-attachments.s3.amazonaws.com/5f5623dda5f75f7368d0df19/5f564e36fe929c34c960c32a/30a8e4c90533f9e9a7d45fcb94de2b12/photo5354937067303448055-min.jpg",
-                    height: "406",
-                    width: "305",
+                    "height": "406",
+                    "width": "305",
                   },
-                  step: [
+                  "step": [
                     {
                       "@type": "HowToStep",
-                      url: "https://karakol-travel.vercel.app/",
-                      name: "Перейдите на сайт",
-                      itemListElement: {
+                      "url": "https://karakol-travel.vercel.app/",
+                      "name": "Перейдите на сайт",
+                      "itemListElement": {
                         "@type": "HowToDirection",
-                        text: "Выберите тур, который вам порнавился.",
+                        "text": "Выберите тур, который вам порнавился.",
                       },
-                      image: {
+                      "image": {
                         "@type": "ImageObject",
-                        url:
+                        "url":
                           "https://trello-attachments.s3.amazonaws.com/5f5623dda5f75f7368d0df19/5f564e36fe929c34c960c32a/30a8e4c90533f9e9a7d45fcb94de2b12/photo5354937067303448055-min.jpg",
-                        height: "406",
-                        width: "305",
+                        "height": "406",
+                        "width": "305",
                       },
                     },
                     {
                       "@type": "HowToStep",
-                      name: "Выберите тур",
-                      url: "https://karakol-travel.vercel.app/",
-                      itemListElement: {
+                      "name": "Выберите тур",
+                      "url": "https://karakol-travel.vercel.app/",
+                      "itemListElement": {
                         "@type": "HowToTip",
-                        text: "Выберите тур из списка, предоставленных.",
+                        "text": "Выберите тур из списка, предоставленных.",
                       },
-                      image: {
+                      "image": {
                         "@type": "ImageObject",
-                        url:
+                        "url":
                           "https://trello-attachments.s3.amazonaws.com/5f5623dda5f75f7368d0df19/5f56259008b4584a42f7fb24/fff52be0e8c64935324fb7e797276561/photo5352685267489763105-min.jpg",
-                        height: "406",
-                        width: "305",
+                        "height": "406",
+                        "width": "305",
                       },
                     },
                     {
                       "@type": "HowToStep",
-                      name: "Позвоните нам",
-                      url: "https://karakol-travel.vercel.app/",
-                      itemListElement: {
+                      "name": "Позвоните нам",
+                      "url": "https://karakol-travel.vercel.app/",
+                      "itemListElement": {
                         "@type": "HowToTip",
-                        text:
+                        "text":
                           "Позвоните по номеру на сайте, назовите назание тура и количество людей.",
                       },
-                      image: {
+                      "image": {
                         "@type": "ImageObject",
-                        url:
+                        "url":
                           "https://trello-attachments.s3.amazonaws.com/5f5623dda5f75f7368d0df19/5f56258edc9f7520ef6036b5/8d2925eccef9e4f78a749b4a9e079d8c/photo5352685267489763103-min.jpg",
-                        height: "406",
-                        width: "305",
+                        "height": "406",
+                        "width": "305",
                       },
                     },
                   ]}
